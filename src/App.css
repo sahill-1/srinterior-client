@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav style  */
+.nav-list li a{
+  text-decoration: none;
+  color: rgb(155, 129, 64);
+  padding: 0 15px;
+  font-weight: 600;
+}
+.nav-list li{
+  list-style: none;
+  display: inline;
+}
+.nav-list{
+text-align: right;
+}
+.logo-nav{
+  width: 100px;
+}
+
+
+
+
+  
+
+
+
+.toggler-parent{
+  display: none;
+}
+@media screen and (max-width: 882px) {
+  .nav-list-parent{
+    display: none;
+  }
+  .toggler-parent{
+    display: block;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 60px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f0efef;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+ background-color: #9b8140;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #b49953;
+}
+
+.sidenav-logo{
+  height: 25px;
+  margin-bottom: 12px;
+}
+
+
+/* catagories-card style */
+.catagories-card{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.catagories-card img{
+ border-radius: 10px;
+ transition: all ease 0.5s;
+}
+.catagories-card:hover img{
+  transition: all ease 0.5s;
+ transform: scale(1.1);
+ }
+.bottom-left {
+  position: absolute;
+  color: white;
+  bottom: 8px;
+  left: 16px;
+}
+
+
+/* gallery style */
+
+
+.gallery{
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery img{
+  transition: all ease 0.5s;
+ }
+ .gallery:hover img{
+   transition: all ease 0.5s;
+  transform: scale(1.1);
+  }
+ .gallery .bottom-left {
+   position: absolute;
+   color: white;
+   bottom: 8px;
+   left: 16px;
+   background-color: #636262;
+   padding: 0 10px;
+ }
+
+/* card-carousel style */
+.service-icon{
+  width: 150px;
+}
+.service-card{
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+   margin:  0 5px;
+}
+.react-multi-carousel-item {
+  width: 282px !important;
+}
+  /* contactus button style */
+
+.contactus-button{
+  background-image: url(/src/components/images/background1.gif) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactus-head{
+  font-weight: 800;
+}
+.contactus-button button{
+  margin-top: 30px;
+  padding: 15px 25px;
+  color: #ffff;
+  background-color: rgb(155, 129, 64);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all ease 0.5s;
+}
+.contactus-button button:hover{
+ opacity: 0.8;
+ transition: all ease 0.5s;
+}
+
+
+/* contact form start */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(155, 129, 64);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(184, 161, 103);
+}
+.contact-card{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.link{
+  text-decoration: none !important;
+  color: rgb(155, 129, 64);
+  transition: all ease 0.5s;
+}
+.link:hover{
+  transition: all ease 0.5s;
+  color: black !important;
+}
+.link-footer{
+  text-decoration: none;
+  color: black !important;
+}
+.link-footer:hover{
+  text-decoration: none;
+  color: rgb(155, 129, 64) !important;
+  transition:  all ease 0.5s !important;
+}
+
+/* banner style */
+.banner{
+  background: url("./components/images/banner-c.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.shadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.banner-card{
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+/* modular kitchen style */
+.link-button{
+  text-decoration: none;
+  background-color: #9b8140;
+  border: #9b8140;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.link-button:hover{
+  text-decoration: none;
+  background-color: #b99c51;
+  border: #9b8140;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.link-button-border{
+  text-decoration: none;;
+  border: 1px solid #9b8140;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.link-button-border:hover{
+  text-decoration: none;;
+  border: 1px solid #9b8140;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #9b8140;
+  transition: all ease 0.5s;
+}
+.link-button-border:hover .link-button-text{
+  color: #ffffff !important;
+  transition: all ease 0.5s;
+}
+
+@media only screen and (max-width: 575px) {
+  .react-multi-carousel-item {
+    width: 360px !important;
+}
+}
